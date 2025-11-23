@@ -2,7 +2,7 @@
   "cars": [
     {
       "title": "California Sunset/Twilight Boat Cruise",
-      "image_url": "/src/assets/images/car1.png",
+      "image_url": "./src/assets/images/car1.png",
       "location": "Manchester, England",
       "mileage": "25,100 miles",
       "transmission": "Automatic",
@@ -14,7 +14,7 @@
     },
     {
       "title": "NYC: Food Tastings and Culture Tour",
-      "image_url": "/src/assets/images/car2.png",
+      "image_url": "./src/assets/images/car2.png",
       "location": "Manchester, England",
       "mileage": "25,100 miles",
       "transmission": "Automatic",
@@ -38,7 +38,7 @@
     },
     {
       "title": "California Sunset/Twilight Boat Cruise",
-      "image_url": "/src/assets/images/car4.png",
+      "image_url": "./src/assets/images/car4.png",
       "location": "Manchester, England",
       "mileage": "25,100 miles",
       "transmission": "Automatic",
@@ -50,7 +50,7 @@
     },
     {
       "title": "NYC: Food Tastings and Culture Tour",
-      "image_url": "/src/assets/images/car5.png",
+      "image_url": "./src/assets/images/car5.png",
       "location": "Manchester, England",
       "mileage": "25,100 miles",
       "transmission": "Automatic",
@@ -62,7 +62,7 @@
     },
     {
       "title": "Grand Canyon Horseshoe Bend 2 days",
-      "image_url": "/src/assets/images/car6.png",
+      "image_url": "./src/assets/images/car6.png",
       "location": "Manchester, England",
       "mileage": "25,100 miles",
       "transmission": "Automatic",
@@ -73,4 +73,5 @@
       "reviews": "672 reviews"
     }
   ]
+
 }

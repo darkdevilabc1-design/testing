@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel & Car Rental - Responsive Tailwind Site</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white font-manrope">
+    <header id="header-container" class="sticky top-0 z-50">
+      <div
+        class="bg-white border-b border-border-light min-h-[43px] text-sm font-normal text-primary-dark"
+      >
+        <div
+          class="max-w-[1920px] mx-auto flex justify-between items-center px-[50px] h-[43.22px]"
+        >
+          <div class="flex space-x-8">
+            <div class="flex items-center space-x-1">
+              <img src="./src/assets/images/call-logo.svg" alt="📞" />
+              <span>+1 222-555-33-99</span>
+            </div>
+            <div class="flex items-center space-x-1">
+              <img src="./src/assets/images/mail-logo.svg" alt="✉️" />
+              <span>support@travila.com</span>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-2 font-medium">
+            <img src="./src/assets/images/lightning-logo.svg" alt="⚡" />
+            <span
+              >Unlock the Magic of Travel with Travila - Your Gateway to
+              Extraordinary Experiences</span
+            >
+            <a
+              href="#"
+              class="flex items-center font-bold text-header-accent-yellow hover:text-primary-dark transition-colors"
+            >
+              <span>Get This Now</span>
+              <img src="./src/assets/images/arrow-right-logo.svg" alt="→" />
+            </a>
+          </div>
+
+          <div class="flex items-center divide-x divide-border-light h-full">
+            <div class="flex items-center px-4 space-x-1 h-full">
+              <img src="./src/assets/images/language-logo.svg" alt="🌐" />
+              <span class="font-normal">EN</span>
+              <img src="./src/assets/images/arrow-down-logo.svg" alt="⌄" />
+            </div>
+
+            <div class="flex items-center px-4 space-x-1 h-full">
+              <span class="font-normal">USD</span>
+              <img src="./src/assets/images/arrow-down-logo.svg" alt="⌄" />
+            </div>
+
+            <a href="#" class="px-4 h-full flex items-center">
+              <img src="./src/assets/images/lightmode-logo.svg" alt="💡" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-b border-border-lighter min-h-[62px] shadow-md"
+      >
+        <div
+          class="max-w-[1920px] mx-auto flex justify-between items-center px-[50px] h-[62px]"
+        >
+          <div class="flex items-center space-x-2 h-9 w-[134px]">
+            <img src="./src/assets/images/main-logo.svg" alt="Logo" />
+          </div>
+
+          <nav
+            class="flex space-x-4 lg:space-x-8 text-sm font-medium text-primary-dark h-full"
+          >
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Home</span
+              ><img src="./src/assets/images/arrow-down-logo.svg" alt="⌄"
+            /></a>
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Tours</span
+              ><img src="./src/assets/images/arrow-down-logo.svg" alt="⌄"
+            /></a>
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Destinations</span
+              ><img src="./src/assets/images/arrow-down-logo.svg" alt="⌄"
+            /></a>
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Activities</span
+              ><img src="./src/assets/images/arrow-down-logo.svg" alt="⌄"
+            /></a>
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Hotel</span
+              ><img src="./src/assets/images/arrow-down-logo.svg" alt="⌄"
+            /></a>
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Rental</span
+              ><img src="./src/assets/images/arrow-down-logo.svg" alt="⌄"
+            /></a>
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Tickets</span
+              ><img src="./src/assets/images/arrow-down-logo.svg" alt="⌄"
+            /></a>
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Pages</span
+              ><img src="./src/assets/images/arrow-down-logo.svg" alt="⌄"
+            /></a>
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Blog</span
+              ><img src="./src/assets/images/arrow-down-logo.svg" alt="⌄"
+            /></a>
+            <a
+              href="#"
+              class="flex items-center hover:text-text-gray transition-colors h-full px-2"
+              ><span>Contact</span></a
+            >
+          </nav>
+
+          <div class="flex items-center space-x-4 h-[46px]">
+            <a
+              href="#"
+              class="bg-primary-dark text-white font-bold text-sm px-6 py-3 rounded-50 h-full flex items-center hover:bg-gray-800 transition-colors"
+            >
+              Become Local Expert
+            </a>
+            <button
+              class="w-[42px] h-[42px] bg-secondary-yellow rounded-lg flex items-center justify-center"
+            >
+              <img src="./src/assets/images/menu.svg" alt="☰" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="relative overflow-x-hidden min-h-screen">
+      <section
+        id="hero-section"
+        class="relative min-h-[1066px] bg-white overflow-hidden"
+      >
+        <div
+          class="absolute inset-x-0 top-0 h-[836px] bg-cover bg-center"
+          style="background-image: url('src/assets/images/image.png')"
+        ></div>
+
+        <div
+          class="absolute top-[320px] left-[336px] w-[590px] h-[407px] transform -translate-y-1/2"
+        >
+          <div
+            class="absolute left-[12px] top-0 w-[216.56px] h-[52px] bg-[#FEFA17] rounded-full flex items-center space-x-2 px-3"
+          >
+            <div class="w-6 h-6 flex items-center justify-center">
+              <img
+                src="./src/assets/images/earth-logo.svg"
+                alt="Earth"
+                class="w-full h-full"
+              />
+            </div>
+            <span class="text-black font-bold text-base leading-[26px]"
+              >Explore the World</span
+            >
+          </div>
+
+          <h2
+            class="absolute left-[12px] right-[12px] top-[72px] text-[52px] leading-[76px] font-extrabold text-black"
+          >
+            Unveil the Beauty of the World Every Day
+          </h2>
+
+          <h6
+            class="absolute left-[12px] top-[239px] text-2xl leading-8 font-medium text-gray-700 w-[486.36px]"
+          >
+            Travel Without Limits Browse, Book, Explore
+          </h6>
+
+          <div class="absolute left-[12px] top-[335px] flex space-x-4">
+            <a href="#" class="w-[204px] h-[65px]">
+              <img
+                src="./src/assets/images/playstore.png"
+                alt="Google Play"
+                class="w-full h-full object-contain"
+              />
+            </a>
+            <a href="#" class="w-[202px] h-[65px]">
+              <img
+                src="./src/assets/images/applestore.png"
+                alt="App Store"
+                class="w-full h-full object-contain"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="absolute right-0 top-[197.64px] w-[979.19px] h-[440.72px]">
+          <img
+            src="./src/assets/images/car.png"
+            alt="Travel Car"
+            class="absolute inset-0 w-full h-full object-contain"
+          />
+        </div>
+
+        <div
+          id="search-bar-container"
+          class="box-border absolute left-[348px] right-[348px] top-[646px] h-[230px] bg-white border border-[#E4E6E8] shadow-[0px_10px_20px_rgba(0,0,0,0.05)] rounded-2xl p-7"
+        >
+          <div class="flex items-center space-x-8 mb-6">
+            <a
+              href="#"
+              class="bg-black text-white px-5 py-2 rounded-full font-normal text-sm"
+              >Tours</a
+            >
+            <a
+              href="#"
+              class="text-black font-normal text-sm hover:text-gray-700"
+              >Hotels</a
+            >
+            <a
+              href="#"
+              class="text-black font-normal text-sm hover:text-gray-700"
+              >Tickets</a
+            >
+            <a
+              href="#"
+              class="text-black font-normal text-sm hover:text-gray-700"
+              >Rental</a
+            >
+            <a
+              href="#"
+              class="text-black font-normal text-sm hover:text-gray-700"
+              >Activities</a
+            >
+          </div>
+
+          <hr class="border-t border-[#E4E6E8] my-4" />
+
+          <div
+            class="flex items-center justify-between space-x-4 h-[104px] border border-[#E4E6E8] rounded-2xl p-7"
+          >
+            <div
+              class="flex-1 min-w-0 pr-4 border-r border-[#E4E6E8] h-full flex flex-col justify-center"
+            >
+              <label class="text-sm font-bold text-gray-600 mb-1"
+                >Location</label
+              >
+              <div
+                class="flex items-center space-x-2 text-black font-bold text-sm"
+              >
+                <img
+                  src="./src/assets/images/location-logo.svg"
+                  alt="Location"
+                  class="w-4 h-4"
+                />
+                <span>New York, USA</span>
+                <img
+                  src="./src/assets/images/dropdown-logo.svg"
+                  alt="Dropdown"
+                  class="w-[14px] h-[10px]"
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex-1 min-w-0 px-4 border-r border-[#E4E6E8] h-full flex flex-col justify-center"
+            >
+              <label class="text-sm font-bold text-gray-600 mb-1"
+                >Check In</label
+              >
+              <div
+                class="flex items-center space-x-2 text-black font-bold text-sm"
+              >
+                <img
+                  src="./src/assets/images/calendar-logo.svg"
+                  alt="Calendar"
+                  class="w-4 h-4"
+                />
+                <span>02 January 2024</span>
+                <img
+                  src="./src/assets/images/dropdown-logo.svg"
+                  alt="Dropdown"
+                  class="w-[14px] h-[10px]"
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex-1 min-w-0 px-4 border-r border-[#E4E6E8] h-full flex flex-col justify-center"
+            >
+              <label class="text-sm font-bold text-gray-600 mb-1"
+                >Check Out</label
+              >
+              <div
+                class="flex items-center space-x-2 text-black font-bold text-sm"
+              >
+                <img
+                  src="./src/assets/images/calendar-logo.svg"
+                  alt="Calendar"
+                  class="w-4 h-4"
+                />
+                <span>02 January 2024</span>
+                <img
+                  src="./src/assets/images/dropdown-logo.svg"
+                  alt="Dropdown"
+                  class="w-[14px] h-[10px]"
+                />
+              </div>
+            </div>
+
+            <div class="w-[190px] pl-4 flex flex-col justify-center">
+              <label class="text-sm font-bold text-gray-600 mb-1">Guest</label>
+              <div
+                class="flex items-center space-x-2 text-black font-bold text-sm"
+              >
+                <img
+                  src="./src/assets/images/user-logo.svg"
+                  alt="User"
+                  class="w-4 h-4"
+                />
+                <span>2 adults, 2 children</span>
+                <img
+                  src="./src/assets/images/dropdown-logo.svg"
+                  alt="Dropdown"
+                  class="w-[14px] h-[10px]"
+                />
+              </div>
+            </div>
+
+            <button
+              class="w-[150.66px] h-[58px] bg-black text-white font-bold text-base rounded-full flex items-center justify-center space-x-2 ml-4 flex-shrink-0"
+            >
+              <img
+                src="./src/assets/images/search-logo.svg"
+                alt="Search"
+                class="w-5 h-5"
+              />
+              <span>Search</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="recent-cars-section"
+        class="py-20 md:py-[100px] lg:py-[130px] bg-white border-b border-[#E4E6E8]"
+      >
+        <div class="max-w-[1248px] mx-auto px-4 lg:px-6">
+          <div
+            class="flex flex-col md:flex-row md:justify-between md:items-end mb-[88px] relative h-[123px]"
+          >
+            <div class="mb-6 md:mb-0">
+              <h2 class="text-[52px] leading-[76px] font-extrabold text-black">
+                Recent Launched Cars
+              </h2>
+              <p class="text-xl leading-8 font-medium text-gray-700 mt-[-15px]">
+                The world's leading car brands
+              </p>
+            </div>
+
+            <div class="absolute right-0 top-[83px] flex space-x-[18.81px]">
+              <button
+                class="w-10 h-10 bg-[#E4E6E8] text-black text-xl rounded-full flex items-center justify-center transition-colors hover:bg-gray-400 shrink-0"
+              >
+                &larr;
+              </button>
+              <button
+                class="w-10 h-10 bg-[#E4E6E8] text-black text-xl rounded-full flex items-center justify-center transition-colors hover:bg-gray-400 shrink-0"
+              >
+                &rarr;
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="cars-grid"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-[40px]"
+          >
+            <p class="col-span-full text-center text-gray-500">
+              Loading cars...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="image-collage-section"
+        class="py-20 md:py-[100px] lg:py-[130px] bg-black"
+      >
+        <div class="max-w-[1248px] mx-auto px-4 lg:px-6">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+          >
+            <div
+              class="lg:order-2 grid grid-cols-2 sm:grid-cols-3 gap-4 h-[500px] md:h-[600px] lg:h-[700px]"
+            >
+              <div class="col-span-1 flex flex-col space-y-4">
+                <img
+                  src="./src/assets/images/l1.png"
+                  alt="Best Car 1"
+                  class="w-full h-full object-cover rounded-[56px] flex-grow"
+                  style="flex: 2"
+                />
+                <img
+                  src="./src/assets/images/l4.png"
+                  alt="Best Car 2"
+                  class="w-full h-full object-cover rounded-[56px]"
+                  style="flex: 1.2"
+                />
+              </div>
+
+              <div class="col-span-1 flex flex-col space-y-4">
+                <img
+                  src="./src/assets/images/l2.png"
+                  alt="Best Car 3"
+                  class="w-full h-full object-cover rounded-[56px]"
+                  style="flex: 1.2"
+                />
+                <img
+                  src="./src/assets/images/l5.png"
+                  alt="Best Car 4"
+                  class="w-full h-full object-cover rounded-[56px] flex-grow"
+                  style="flex: 2"
+                />
+              </div>
+
+              <div class="hidden sm:flex flex-col space-y-4 col-span-1">
+                <img
+                  src="./src/assets/images/l3.png"
+                  alt="Best Car 5"
+                  class="w-full h-full object-cover rounded-[56px] flex-grow"
+                  style="flex: 1.5"
+                />
+                <img
+                  src="./src/assets/images/l6.png"
+                  alt="Best Car 6"
+                  class="w-full h-full object-cover rounded-[56px]"
+                  style="flex: 1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-work-section">
+        <div
+          class="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center justify-between py-20"
+        >
+          <div class="w-full lg:w-1/2 lg:pr-20 mb-12 lg:mb-0">
+            <h2 class="text-5xl font-extrabold text-primary-dark">
+              How It Work ?
+            </h2>
+            <p class="text-lg text-text-gray mb-12">
+              Just 4 easy and quick steps
+            </p>
+            <div class="relative">
+              <img
+                src="./src/assets/images/car7.png"
+                alt="Car"
+                class="w-full h-auto max-w-lg mx-auto lg:mx-0"
+              />
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 space-y-12">
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 flex items-center justify-center border border-primary-dark rounded-full text-lg font-bold text-primary-dark mr-6 mt-1 shrink-0"
+              >
+                1
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold text-primary-dark mb-1">
+                  Browse and Select
+                </h3>
+                <p class="text-base text-text-gray">
+                  Easily find your perfect car. Filter by model, brand, and size
+                  for a seamless selection process.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 flex items-center justify-center border border-primary-dark rounded-full text-lg font-bold text-primary-dark mr-6 mt-1 shrink-0"
+              >
+                2
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold text-primary-dark mb-1">
+                  Booking and Reservation
+                </h3>
+                <p class="text-base text-text-gray">
+                  Quickly reserve with flexible dates and locations. Real-time
+                  availability updates ensure a smooth booking experience.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 flex items-center justify-center border border-primary-dark rounded-full text-lg font-bold text-primary-dark mr-6 mt-1 shrink-0"
+              >
+                3
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold text-primary-dark mb-1">
+                  Payment and Confirmation
+                </h3>
+                <p class="text-base text-text-gray">
+                  Secure payments, various methods accepted. Instant
+                  confirmation for a hassle-free rental process.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 flex items-center justify-center border border-primary-dark rounded-full text-lg font-bold text-primary-dark mr-6 mt-1 shrink-0"
+              >
+                4
+              </div>
+              <div>
+                <h3 class="text-xl font-extrabold text-primary-dark mb-1">
+                  Pickup and Return
+                </h3>
+                <p class="text-base text-text-gray">
+                  Effortless pickup and return. Simple documentation, optional
+                  services like delivery, and excellent customer support.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services-section" class="bg-background-light py-20">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 py-20 relative">
+          <div class="flex justify-between items-end mb-12">
+            <div>
+              <h2 class="text-5xl font-extrabold text-primary-dark">
+                Our Services
+              </h2>
+              <p class="text-lg text-text-gray">Just 4 easy and quick steps</p>
+            </div>
+            <a
+              href="#"
+              class="bg-primary-dark text-white text-sm font-bold px-6 py-3 rounded-50 transition-colors hover:bg-gray-800 flex items-center"
+            >
+              View More
+              <span class="ml-2">→</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-white border border-border-light rounded-xl overflow-hidden shadow-sm"
+            >
+              <img
+                src="./src/assets/images/s1.png"
+                alt="Chauffeur Hailing"
+                class="w-full h-auto object-cover rounded-xl"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-primary-dark">
+                  Chauffeur Hailing
+                </h3>
+                <p
+                  class="text-sm text-text-gray flex justify-between items-center mt-1"
+                >
+                  <span>17 services</span>
+                  <span class="text-xl">→</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-border-light rounded-xl overflow-hidden shadow-sm"
+            >
+              <img
+                src="./src/assets/images/s2.png"
+                alt="Airport Transfer"
+                class="w-full h-auto object-cover rounded-xl"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-primary-dark">
+                  Airport Transfer
+                </h3>
+                <p
+                  class="text-sm text-text-gray flex justify-between items-center mt-1"
+                >
+                  <span>17 services</span>
+                  <span class="text-xl">→</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-border-light rounded-xl overflow-hidden shadow-sm"
+            >
+              <img
+                src="./src/assets/images/s3.png"
+                alt="Corporate Fleet"
+                class="w-full h-auto object-cover rounded-xl"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-primary-dark">
+                  Corporate Fleet
+                </h3>
+                <p
+                  class="text-sm text-text-gray flex justify-between items-center mt-1"
+                >
+                  <span>17 services</span>
+                  <span class="text-xl">→</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-border-light rounded-xl overflow-hidden shadow-sm"
+            >
+              <img
+                src="./src/assets/images/s4.png"
+                alt="One-Way Rentals"
+                class="w-full h-auto object-cover rounded-xl"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-primary-dark">
+                  One-Way Rentals
+                </h3>
+                <p
+                  class="text-sm text-text-gray flex justify-between items-center mt-1"
+                >
+                  <span>17 services</span>
+                  <span class="text-xl">→</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials-section">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 py-20">
+          <div class="text-center mb-12">
+            <div
+              class="inline-flex items-center bg-gray-200 rounded-50 px-4 py-1 mb-4 text-sm font-medium"
+            >
+              Testimonials
+            </div>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-primary-dark">
+              Don't take our word for it
+            </h2>
+          </div>
+
+          <div
+            id="testimonials-slider"
+            class="flex overflow-x-scroll snap-x snap-mandatory space-x-8 pb-4"
+          >
+            <div
+              class="testimonial-slide flex-shrink-0 w-80 md:w-96 snap-start bg-white border border-border-light rounded-2xl shadow-md p-8"
+            >
+              <h3 class="text-lg font-bold text-primary-dark mb-4">
+                The best booking system
+              </h3>
+              <p class="text-sm text-text-gray mb-6">
+                I've been using the hotel booking system for several years now,
+                and it's become my go-to platform for planning my trips. The
+                interface is user-friendly, and I appreciate the detailed
+                information and real-time availability of hotels.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <img
+                    src="https://i.pravatar.cc/50?img=10"
+                    alt="Sara Mohamed"
+                    class="w-12 h-12 rounded-full mr-4 object-cover"
+                  />
+                  <div>
+                    <p class="font-bold text-primary-dark">Sara Mohamed</p>
+                    <p class="text-xs text-text-gray">Jakartar</p>
+                  </div>
+                </div>
+                <div class="text-secondary-yellow text-xl">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div
+              class="testimonial-slide flex-shrink-0 w-80 md:w-96 snap-start bg-white border border-border-light rounded-2xl shadow-md p-8"
+            >
+              <h3 class="text-lg font-bold text-primary-dark mb-4">
+                Reliable and easy booking
+              </h3>
+              <p class="text-sm text-text-gray mb-6">
+                I've been using the hotel booking system for several years now,
+                and it's become my go-to platform for planning my trips. The
+                interface is user-friendly, and I appreciate the detailed
+                information and real-time availability of hotels.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <img
+                    src="https://i.pravatar.cc/50?img=11"
+                    alt="Atend John"
+                    class="w-12 h-12 rounded-full mr-4 object-cover"
+                  />
+                  <div>
+                    <p class="font-bold text-primary-dark">Atend John</p>
+                    <p class="text-xs text-text-gray">California</p>
+                  </div>
+                </div>
+                <div class="text-secondary-yellow text-xl">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div
+              class="testimonial-slide flex-shrink-0 w-80 md:w-96 snap-start bg-white border border-border-light rounded-2xl shadow-md p-8"
+            >
+              <h3 class="text-lg font-bold text-primary-dark mb-4">
+                Exceptional Car Selection
+              </h3>
+              <p class="text-sm text-text-gray mb-6">
+                I've been using the hotel booking system for several years now,
+                and it's become my go-to platform for planning my trips. The
+                interface is user-friendly, and I appreciate the detailed
+                information and real-time availability of hotels.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <img
+                    src="https://i.pravatar.cc/50?img=12"
+                    alt="Reviewer 3"
+                    class="w-12 h-12 rounded-full mr-4 object-cover"
+                  />
+                  <div>
+                    <p class="font-bold text-primary-dark">Reviewer 3</p>
+                    <p class="text-xs text-text-gray">Florida</p>
+                  </div>
+                </div>
+                <div class="text-secondary-yellow text-xl">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats-bar-section" class="py-20">
+        <div
+          class="bg-primary-dark rounded-32 max-w-7xl mx-auto px-8 py-12 relative overflow-hidden shadow-2xl"
+        >
+          <div
+            class="relative grid grid-cols-2 md:grid-cols-4 divide-x divide-white/20 text-white text-center"
+          >
+            <div class="px-6 py-2">
+              <p class="text-5xl font-extrabold mb-1">168k</p>
+              <p class="text-base font-medium">Happy Clients</p>
+            </div>
+            <div class="px-6 py-2">
+              <p class="text-5xl font-extrabold mb-1">+45k</p>
+              <p class="text-base font-medium">Destinations</p>
+            </div>
+            <div class="px-6 py-2">
+              <p class="text-5xl font-extrabold mb-1">+49</p>
+              <p class="text-base font-medium">Global Branch</p>
+            </div>
+            <div class="px-6 py-2">
+              <p class="text-5xl font-extrabold mb-1">+26k</p>
+              <p class="text-base font-medium">Campaigns</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq-section" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+          <h2
+            class="text-4xl md:text-5xl font-extrabold text-primary-dark text-center"
+          >
+            Frequently Asked Questions
+          </h2>
+          <p class="text-lg text-text-gray text-center mb-12">
+            You need to come at least once in your life
+          </p>
+
+          <div
+            id="faq-accordion"
+            class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-border-light"
+          >
+            <div class="border-b border-border-light last:border-b-0">
+              <button
+                id="accordion-header-1"
+                data-accordion-id="1"
+                class="w-full text-left p-6 md:p-8 flex justify-between items-center transition-colors hover:bg-gray-50 focus:outline-none bg-gray-50"
+              >
+                <div class="flex items-start">
+                  <span class="text-3xl font-extrabold text-text-gray mr-4"
+                    >01</span
+                  >
+                  <h3 class="text-lg md:text-xl font-bold text-primary-dark">
+                    How do I make a reservation on your website
+                  </h3>
+                </div>
+                <span
+                  id="icon-1"
+                  class="text-2xl font-bold text-primary-dark ml-4 transition-transform transform rotate-45"
+                  >+</span
+                >
+              </button>
+              <div
+                id="accordion-body-1"
+                class="accordion-body h-auto max-h-96 opacity-100 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div class="pl-20 pr-8 pb-6 md:pb-8 text-base text-text-gray">
+                  Provide a step-by-step guide on how users can browse and book
+                  travel services on your platform. Include information on
+                  searching for destinations, selecting dates, choosing
+                  accommodation, and completing the booking process.
+                </div>
+              </div>
+            </div>
+            <div class="border-b border-border-light last:border-b-0">
+              <button
+                id="accordion-header-2"
+                data-accordion-id="2"
+                class="w-full text-left p-6 md:p-8 flex justify-between items-center transition-colors hover:bg-gray-50 focus:outline-none"
+              >
+                <div class="flex items-start">
+                  <span class="text-3xl font-extrabold text-text-gray mr-4"
+                    >02</span
+                  >
+                  <h3 class="text-lg md:text-xl font-bold text-primary-dark">
+                    What documents do I need for my trip, and how do I obtain
+                    them?
+                  </h3>
+                </div>
+                <span
+                  id="icon-2"
+                  class="text-2xl font-bold text-primary-dark ml-4 transition-transform transform"
+                  >+</span
+                >
+              </button>
+              <div
+                id="accordion-body-2"
+                class="accordion-body max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div class="pl-20 pr-8 pb-6 md:pb-8 text-base text-text-gray">
+                  ... Answer for question 2 ...
+                </div>
+              </div>
+            </div>
+            <div class="border-b border-border-light last:border-b-0">
+              <button
+                id="accordion-header-3"
+                data-accordion-id="3"
+                class="w-full text-left p-6 md:p-8 flex justify-between items-center transition-colors hover:bg-gray-50 focus:outline-none"
+              >
+                <div class="flex items-start">
+                  <span class="text-3xl font-extrabold text-text-gray mr-4"
+                    >03</span
+                  >
+                  <h3 class="text-lg md:text-xl font-bold text-primary-dark">
+                    In the event that I need to modify or cancel my reservation,
+                    what are the policies in place?
+                  </h3>
+                </div>
+                <span
+                  id="icon-3"
+                  class="text-2xl font-bold text-primary-dark ml-4 transition-transform transform"
+                  >+</span
+                >
+              </button>
+              <div
+                id="accordion-body-3"
+                class="accordion-body max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div class="pl-20 pr-8 pb-6 md:pb-8 text-base text-text-gray">
+                  ... Answer for question 3 ...
+                </div>
+              </div>
+            </div>
+            <div class="border-b border-border-light last:border-b-0">
+              <button
+                id="accordion-header-4"
+                data-accordion-id="4"
+                class="w-full text-left p-6 md:p-8 flex justify-between items-center transition-colors hover:bg-gray-50 focus:outline-none"
+              >
+                <div class="flex items-start">
+                  <span class="text-3xl font-extrabold text-text-gray mr-4"
+                    >04</span
+                  >
+                  <h3 class="text-lg md:text-xl font-bold text-primary-dark">
+                    Can you specify the types of credit/debit cards, digital
+                    wallets, or other online payment methods accepted?
+                  </h3>
+                </div>
+                <span
+                  id="icon-4"
+                  class="text-2xl font-bold text-primary-dark ml-4 transition-transform transform"
+                  >+</span
+                >
+              </button>
+              <div
+                id="accordion-body-4"
+                class="accordion-body max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div class="pl-20 pr-8 pb-6 md:pb-8 text-base text-text-gray">
+                  ... Answer for question 4 ...
+                </div>
+              </div>
+            </div>
+            <div class="border-b border-border-light last:border-b-0">
+              <button
+                id="accordion-header-5"
+                data-accordion-id="5"
+                class="w-full text-left p-6 md:p-8 flex justify-between items-center transition-colors hover:bg-gray-50 focus:outline-none"
+              >
+                <div class="flex items-start">
+                  <span class="text-3xl font-extrabold text-text-gray mr-4"
+                    >05</span
+                  >
+                  <h3 class="text-lg md:text-xl font-bold text-primary-dark">
+                    What are the working hours, and what can I expect in terms
+                    of response times?
+                  </h3>
+                </div>
+                <span
+                  id="icon-5"
+                  class="text-2xl font-bold text-primary-dark ml-4 transition-transform transform"
+                  >+</span
+                >
+              </button>
+              <div
+                id="accordion-body-5"
+                class="accordion-body max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div class="pl-20 pr-8 pb-6 md:pb-8 text-base text-text-gray">
+                  ... Answer for question 5 ...
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a
+              href="#"
+              class="bg-primary-dark text-white text-base font-bold px-8 py-4 rounded-50 transition-colors hover:bg-gray-800 flex items-center justify-center w-52 mx-auto"
+            >
+              Our Support Center →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="download-app-section"
+        class="py-20 md:py-[100px] lg:py-[130px] bg-white"
+      >
+        <div class="max-w-[1248px] mx-auto px-4 lg:px-6">
+          <div
+            class="rounded-[32px] p-8 md:p-16 lg:p-20 relative overflow-hidden h-[638px] flex items-center bg-cover bg-center"
+            style="background-image: url('/src/assets/images/back-img.png')"
+          >
+            <div class="relative z-20 w-full lg:w-1/2">
+              <div
+                class="inline-flex items-center p-0.5 pr-4 rounded-full bg-white text-black text-sm font-bold min-h-[48px] mb-4"
+              >
+                <span class="bg-white px-4 py-2 rounded-full mr-2">
+                  Install APP & Get discount code
+                </span>
+              </div>
+
+              <h2
+                class="text-[52px] leading-[62px] font-extrabold text-black max-w-lg mb-6"
+              >
+                Discover Seamless Travel with Travila
+              </h2>
+
+              <p
+                class="text-[20px] leading-8 font-medium text-[#737373] max-w-lg mb-10"
+              >
+                Embark on a journey like never before with Travila – your
+                ultimate travel companion.
+              </p>
+
+              <div class="flex space-x-4 pt-4">
+                <a href="#">
+                  <img
+                    src="./src/assets/images/playstore.png"
+                    alt="Google Play"
+                    class="h-16 w-auto max-w-full"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./src/assets/images/applestore.png"
+                    alt="App Store"
+                    class="h-16 w-auto max-w-full"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="hidden lg:block absolute inset-0 pointer-events-none z-10"
+            >
+              <img
+                src="./src/assets/images/laptop.png"
+                alt="App on Laptop Screen"
+                class="absolute w-[560px] h-[521px] object-contain"
+                style="top: -70px; right: 0px"
+              />
+
+              <img
+                src="./src/assets/images/phone.png"
+                alt="App on Phone Screen"
+                class="absolute w-[252px] h-[342px] object-contain"
+                style="top: -90px; right: 300px; z-index: 10"
+              />
+
+              <img
+                src="./src/assets/images/big-arrow.png"
+                alt="Big Arrow Graphic"
+                class="absolute w-[189px] h-[28px] object-contain"
+                style="
+                  bottom: 80px;
+                  right: 120px;
+                  transform: rotate(-5deg);
+                  z-index: 5;
+                "
+              />
+
+              <img
+                src="./src/assets/images/small-arrow.png"
+                alt="Small Arrow Graphic"
+                class="absolute w-[118px] h-[17px] object-contain"
+                style="
+                  bottom: 40px;
+                  right: 80px;
+                  transform: rotate(10deg);
+                  z-index: 5;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer-container" class="bg-primary-dark text-white">
+      <div class="max-w-[1248px] mx-auto px-4 lg:px-6">
+        <div
+          class="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-10 border-b border-white/20 pt-16 pb-12"
+        >
+          <div class="col-span-2 md:col-span-2 space-y-6">
+            <div
+              class="flex items-center text-3xl font-extrabold text-secondary-yellow"
+            >
+              <img
+                src="./src/assets/images/logo-footer.png"
+                alt="Travila Logo"
+                class="h-8 w-auto"
+              />
+            </div>
+            <p class="text-sm text-white/70 max-w-sm">
+              Dive into local recommendations for a truly authentic experience.
+            </p>
+
+            <div class="flex items-center space-x-2 text-sm">
+              <img
+                src="./src/assets/images/phone.svg"
+                alt="Phone Icon"
+                class="w-4 h-4"
+              />
+              <span class="text-white/70">Need help? Call us</span>
+            </div>
+            <p class="text-3xl font-extrabold text-white">1-800-222-8888</p>
+          </div>
+
+          <div class="space-y-4 col-span-1">
+            <h4 class="text-lg font-bold text-white mb-2">Company</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Community Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Jobs & Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Our Awards</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 col-span-1">
+            <h4 class="text-lg font-bold text-white mb-2">Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Tour Guide</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Tour Booking</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Hotel Booking</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Ticket Booking</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Rental Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 col-span-1">
+            <h4 class="text-lg font-bold text-white mb-2">Legal</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Cookies Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Data Processing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-white/70 hover:text-white transition-colors"
+                  >Data Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-2 md:col-span-1 space-y-4">
+            <h4 class="text-lg font-bold text-white mb-2">Newsletter</h4>
+            <div class="relative">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full bg-black border border-white/20 text-white px-4 py-3 rounded-xl focus:ring-secondary-yellow focus:border-secondary-yellow text-sm"
+              />
+            </div>
+            <button
+              class="w-full bg-secondary-yellow text-primary-dark font-bold py-3 rounded-xl transition-colors hover:bg-yellow-400"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center py-8 text-sm text-white/70"
+        >
+          <p>© 2024 Travila Inc. All rights reserved.</p>
+          <div class="mt-4 md:mt-0 flex items-center">
+            <span class="font-bold mr-4">Follow us</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/js/index.js"></script>
+  </body>
+</html>

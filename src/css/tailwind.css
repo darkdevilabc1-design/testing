@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base font setup based on Figma design */
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+/* Custom utility for icons (as we can't use real SVG/Image assets) */
+.icon-placeholder {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: #d6d7d8; /* Placeholder color */
+  border-radius: 2px;
+}
+
+.icon-placeholder-round {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+}

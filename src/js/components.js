@@ -49,7 +49,7 @@ export function createCarCard(item) {
             </div>
 
             <div class="h-[326px] flex items-center justify-center overflow-hidden rounded-t-[32px] relative">
-                <img src=".${item.image_url}" alt="${item.title}" class="w-[390px] h-[298.34px] object-contain">
+                <img src="${item.image_url}" alt="${item.title}" class="w-[390px] h-[298.34px] object-contain">
                 
                 <button class="absolute top-5 right-5 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center border border-transparent hover:border-black transition-all">
                     <span class="text-black">♡</span>
@@ -129,3 +129,4 @@ export async function initializeRecentCars(containerId, data) {
     }
 
 }
+

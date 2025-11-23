@@ -26,7 +26,7 @@
     },
     {
       "title": "Grand Canyon Horseshoe Bend 2 days",
-      "image_url": "/src/assets/images/car3.png",
+      "image_url": "./src/assets/images/car3.png",
       "location": "Manchester, England",
       "mileage": "25,100 miles",
       "transmission": "Automatic",
@@ -75,3 +75,4 @@
   ]
 
 }
+
